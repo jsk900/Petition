@@ -1,0 +1,269 @@
+/*Main setup ..................................................................................................*/
+@import url(https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Bitter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+/*Page Setup.....................................................................................................*/
+.Petition {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-grow: 1;
+}
+/*Images ..............................................................................................*/
+.Petition.Petition_Register {
+    background-image: url(./cold.png);
+}
+
+.Petition.Petition_Additional {
+    background-image: url(./sad-pup.png);
+}
+
+.Petition.Petition_Login {
+    background-image: url(./cold-dog.png);
+}
+
+.Petition.Petition_Signature {
+    background-image: url(./blanket-dog.png);
+}
+
+.Petition.Petition_Thankyou {
+    background-image: url(./WinterDogs.png);
+}
+
+.Petition.Petition_Users {
+    background-image: url(./pugs.png);
+}
+
+.Petition.Petition_Edit {
+    background-image: url(./dog-with-pc.png);
+}
+
+.Petition.Petition_Cities {
+    background-image: url(./dog-sweater.png);
+}
+/*Images end.......................................................................................................*/
+/*Headlines .......................................................................................................*/
+.headlines {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 0 10px;
+    padding: 3px;
+}
+
+.headlines h1 {
+    position: relative;
+    color: #341F03;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 2px 1px 1px #938924;
+}
+
+.headlines.headlines2 h1 {
+    color: #938924;
+    text-shadow: 2px 1px 1px #341F03;
+}
+
+.headlines2 span {
+    color:  #D4A73B;
+}
+/*headlines end ........................................................................................*/
+
+/*Side container .......................................................................................*/
+.sideContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/*Side container end ...................................................................................*/
+
+/*Form container .......................................................................................*/
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 500px;
+    margin: 20px 10px 0 0px;
+}
+
+.formContainer.formContainer2 {
+    justify-content: flex-start;
+    margin: 0 10px 0 0px;
+    width: 30%;
+}
+
+.formContainer.formContainer3 {
+    height: 570px;
+}
+
+.formContainer ul {
+    margin-top: 20px;
+    height: 500px;
+}
+
+.formContainer li {
+    margin-top: 2px;
+    font-size: 22px;
+    list-style-type: none;
+    color: #F9B834;
+}
+
+.formContainer h5 {
+    margin: 10px 0 5px 0;
+    color: #341F03;
+}
+
+#colourChange {
+    color: #F9B834;
+}
+
+.formContainer span {
+    color: #D4A73B;
+}
+
+.formContainer h3 {
+    position: relative;
+    color: #f00808;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+
+.formContainer p {
+    margin-top: 40px;
+    font-size: 22px;
+
+}
+
+.formContainer a {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #341F03;
+    text-decoration: none;
+}
+
+.formContainer a:hover {
+    color:  #f5ac09;
+}
+
+.formContainer canvas {
+    margin-bottom: 10px;
+    background-color: #938924;
+    color: #D4A73B;
+}
+/*Form container end ...........................................................................*/
+
+/*Form inputs ....................................................................................*/
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form input {
+    position: relative;
+    width: 96%;
+    height: 100px;
+    font-size: 18px;
+    color: #341F03;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+
+.form input, input[placeholder]{
+    text-align:center;
+}
+
+.form input[type=text], input[type=email], input[type=password], input[type=number] {
+    outline: none;
+    border: 1px solid #938924;
+}
+
+/*::-webkit-input-placeholder {
+    color: #341F03;
+}
+
+::-moz-placeholder {
+   color: #341F03;
+   opacity: 1;
+}*/
+
+.form input:hover {
+    background-color: #D4A73B;
+}
+/*Form input end ....................................................................................*/
+
+/*Form button .......................................................................................*/
+.form button {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    font-size: 22px;
+    color: #341F03;
+    text-align: center;
+    border-radius: 6px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #938924;
+    background-color: #fff;
+}
+
+.form button:hover {
+    background-color: #938924;
+}
+
+/*Button disguised as link .......................................................................*/
+#button {
+     background:none!important;
+     width: 100%;
+     height: 50px;
+     font-size: 22px;
+     color: #341F03;
+     font-weight: bold;
+     border:none;
+     padding:0!important;
+     cursor: pointer;
+}
+
+#button:hover {
+    color:  #f5ac09;
+}
+
+/*Button end ........................................................................................*/
+
+/*Thank you page extras ..............................................................................*/
+.ty_p a {
+    color: #341F03;
+    font-weight: bold;
+}
+
+.ty_p span {
+    color:  #f5ac09;
+    font-weight: bold;
+}
+
+#signature {
+    margin-top: 40px;
+    margin-bottom: 300px;
+    background-color: #938924;
+    color: #D4A73B;
+}
+/*extras end ..........................................................................................*/

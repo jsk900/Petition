@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="Petition Petition_Cities">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>Keep dogs warm this winter in {{city}}</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <ul>
+                {{#list}}
+                    <li>
+                        {{#if url}}
+                            <a href="{{url}}" target="_blank">{{first}} {{last}}</a>
+                        {{else}}
+                            {{first}} {{last}}
+                        {{/if}}
+                        {{#if age}}
+                            {{#if city}}
+                                ({{age}}, <a href="./{{city}}">{{city}}</a>)
+                            {{else}}
+                                ({{age}})
+                            {{/if}}
+                        {{else}}
+                            {{#if city}}
+                                (<a href="./{{city}}">{{city}}</a>)
+                            {{/if}}
+                        {{/if}}
+                    </li>
+                {{/list}}
+            </ul>
+        </div>
+    </div>
+</div>

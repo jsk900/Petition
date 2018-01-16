@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="Petition Petition_Users">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>We hope that by signing this petition all dogs will be dressed appropriately</h1>
+                <h1>for all weather conditions</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <ul>
+                {{#each selectArr}}
+                    <li>
+                        {{#if url}}
+                            <a href="{{url}}" target="_blank">{{first}} {{last}}</a>
+                         {{else}}
+                               {{first}} {{last}}
+                         {{/if}}
+                         {{#if age}}
+                             {{#if city}}
+                                   ({{age}}, <a href="./petition_users/{{city}}">{{city}}</a>)
+                              {{else}}
+                                   ({{age}})
+                              {{/if}}
+                         {{else}}
+                              {{#if city}}
+                                   (<a href="./{{city}}">{{city}}</a>)
+                               {{/if}}
+                           {{/if}}
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

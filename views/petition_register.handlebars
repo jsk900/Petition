@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="Petition Petition_Register">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>Please register to sign our petition to keep all dogs warm in winter</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <h5><span>Please co</span>mplete all fields</h5>
+            <form class="form" action="registerForm" method="post">
+                <input type="text" name="first" placeholder="Please enter your first name" autofocus>
+                <input type="text" name="last" placeholder="Please enter your surname">
+                <input type="email" name="email" placeholder="Please enter your email">
+                <input type="password" name="password" placeholder="Please enter your password">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button>Register</button>
+            </form>
+            <h3>{{> errorHandle}}</h3>
+            <p>If you are already a user. Please log in here...<a href="/petition_login">Login</a></p>
+        </div>
+    </div>
+</div>

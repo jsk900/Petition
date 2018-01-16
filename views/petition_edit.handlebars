@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="Petition Petition_Edit">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>{{ first }} Edit your profile</h1>
+            </div>
+        </div>
+        <div class="formContainer formContainer3">
+            <form class="form" action="editForm" method="post">
+                <label for="first">First Name</label>
+                <input type="text" name="first" value="{{valueObj.first}}" autofocus>
+                <label for="last">Last Name</label>
+                <input type="text" name="last" value="{{valueObj.last}}">
+                <label for="email">Email</label>
+                <input type="email" name="email" value="{{valueObj.email}}">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+                <label for="age">Age</label>
+                <input type="number" min="0" name="age" value="{{valueObj.age}}">
+                <label for="city">City</label>
+                <input type="text" name="city" value="{{valueObj.city}}">
+                <label for="url">Homepage</label>
+                <input type="text" name="url" value="{{valueObj.url}}">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button>Update</button>
+            </form>
+            <h3>{{> errorHandle}}</h3>
+        </div>
+    </div>
+</div>

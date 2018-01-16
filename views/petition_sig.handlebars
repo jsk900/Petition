@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="Petition Petition_Signature">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>{{ first }} please sign our petition to keep all <span>dogs warm in winter</span></h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <h5 id="colourChange">Please sign here</h5>
+            <form class="form" action="signatureForm" method="post">
+                <input id="canvas" type="hidden" name="canvas">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <canvas id="canvas" name="canvas" width="200" height="80"></canvas>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

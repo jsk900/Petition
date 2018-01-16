@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="Petition Petition_Thankyou">
+        <div class="sideContainer">
+            <div class="headlines headlines2">
+                <h1>Thank you <span>{{ first }}</span> for signing our petition.</h1>
+                <h1>This will go a long way in keeping our canine friends fuzzy and warm this winter!!!</h1>
+            </div>
+        </div>
+        <div class="formContainer formContainer2">
+            <img id="signature" src="{{ signature }}" alt="signature" width="200" height="80">
+            <p class="ty_p"><a href="/petition_users">See all {{selectArr.length}} signers</a></p>
+            <p class="ty_p"><a href="/petition_edit">Edit your profile<span> {{ first }}</span></a></p>
+            <form class="form" action="deleteForm" method="post">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button id="button">Delete your signature</button>
+            </form>
+            <p class="ty_p"><a href="/logout">Logout</a></p>
+        </div>
+    </div>
+</div>

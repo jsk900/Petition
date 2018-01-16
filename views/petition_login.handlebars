@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="Petition Petition_Login">
+        <div class="sideContainer">
+            <div class="headlines">
+                <h1>Please login</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <form class="form" action="loginForm" method="post">
+                <input type="email" name="email" placeholder="Please enter your email" autofocus>
+                <input type="password" name="password" placeholder="Please enter your password">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <h3>{{> errorHandle}}</h3>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</div>
