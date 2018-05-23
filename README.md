@@ -12,10 +12,10 @@ You can see this project live at [(https://doggypetition.herokuapp.com/)]
 
 ### Screenshots
 
-<p align="center"><img src="screenshot1.png"></p>
-<p align="center"><img src="screenshot2.png"></p>
-<p align="center"><img src="screenshot3.png"></p>
-<p align="center"><img src="screenshot4.png"></p>
-<p align="center"><img src="screenshot5.png"></p>
-<p align="center"><img src="screenshot6.png"></p>
-<p align="center"><img src="screenshot7.png"></p>
+<p align="center"><img src="./screenshot1.png"></p>
+<p align="center"><img src="./screenshot2.png"></p>
+<p align="center"><img src="./screenshot3.png"></p>
+<p align="center"><img src="./screenshot4.png"></p>
+<p align="center"><img src="./screenshot5.png"></p>
+<p align="center"><img src="./screenshot6.png"></p>
+<p align="center"><img src="./screenshot7.png"></p>
