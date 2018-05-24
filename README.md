@@ -19,3 +19,4 @@ You can see this project live at https://doggypetition.herokuapp.com/
 <p align="center"><img src="public/screenshot5.png"></p>
 <p align="center"><img src="public/screenshot6.png"></p>
 <p align="center"><img src="public/screenshot7.png"></p>
+<p align="center"><img src="public/screenshot8.png"></p>
