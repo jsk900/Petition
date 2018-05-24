@@ -10,7 +10,7 @@ You can see this project live at https://doggypetition.herokuapp.com/
 
 3. A Postgresql database to record user information.
 
-### Screenshots
+# Screenshots
 
 <p align="center"><img src="public/screenshot1.png"></p>
 <p align="center"><img src="public/screenshot2.png"></p>
